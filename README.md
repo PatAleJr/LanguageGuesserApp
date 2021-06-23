@@ -7,7 +7,7 @@ One part of the program takes in text from the internet and puts seperates it in
 To generate a file, go to Program.cs in LanguageApp. 
 Add your online resources to the resources array (more info is commented in the code) and call the function addDataToDocument() in Main().
 
-LanguageAppML.Model is the AI I trained using data I generated.
+LanguageAppML.Model is the AI I trained using data I generated. languages.TSV is the file I used to train it.
 
 The Windows form passes the input text into the model and the model sends back the language so the windows form can display it.
 

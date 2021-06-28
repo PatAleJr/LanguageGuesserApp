@@ -1,6 +1,9 @@
 # LanguageGuesserApp
 
-A Windows Forms application that guesses the language a user is typing in. Use Visual Studio to open this.
+A Windows Forms application that guesses the language a user is typing in.
+
+To try out the application, download build.zip, extract all and open the LanguageApp.exe. 
+Use Visual Studio to look at the code.
 
 Basically, I used ML.NET to train an AI that can guess the language. 
 One part of the program takes in text from the internet and puts seperates it into sentences. The sentences are labeled with a language and saved into a TSV file.

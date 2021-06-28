@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.ML;
 using LanguageAppML.Model;
+using System.IO;
 
 namespace LanguageAppML.Model
 {
@@ -26,9 +27,10 @@ namespace LanguageAppML.Model
             // Create new MLContext
             MLContext mlContext = new MLContext();
 
-            // Load model & create prediction engine
-            string modelPath = @"C:\Users\patrick.jilek-rodri\AppData\Local\Temp\MLVSTools\LanguageAppML\LanguageAppML.Model\MLModel.zip";
+            // Load model & create prediction engine            
+            string modelPath = Path.Combine( Environment.CurrentDirectory, "MLModel.zip" );
             ITransformer mlModel = mlContext.Model.Load(modelPath, out var modelInputSchema);
+
             var predEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
 
             return predEngine;

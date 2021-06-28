@@ -40,9 +40,10 @@ namespace LanguageApp
             // 
             this.InputText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.InputText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.InputText.Location = new System.Drawing.Point(60, 180);
+            this.InputText.Location = new System.Drawing.Point(69, 240);
+            this.InputText.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.InputText.Name = "InputText";
-            this.InputText.Size = new System.Drawing.Size(180, 26);
+            this.InputText.Size = new System.Drawing.Size(205, 30);
             this.InputText.TabIndex = 1;
             this.InputText.Text = "Type here";
             this.InputText.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -51,9 +52,9 @@ namespace LanguageApp
             // 
             this.InputLabel.AutoSize = true;
             this.InputLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.InputLabel.Location = new System.Drawing.Point(60, 140);
+            this.InputLabel.Location = new System.Drawing.Point(69, 187);
             this.InputLabel.Name = "InputLabel";
-            this.InputLabel.Size = new System.Drawing.Size(43, 20);
+            this.InputLabel.Size = new System.Drawing.Size(57, 25);
             this.InputLabel.TabIndex = 2;
             this.InputLabel.Text = "Text:";
             // 
@@ -61,9 +62,9 @@ namespace LanguageApp
             // 
             this.OutputLabel.AutoSize = true;
             this.OutputLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.OutputLabel.Location = new System.Drawing.Point(280, 140);
+            this.OutputLabel.Location = new System.Drawing.Point(320, 187);
             this.OutputLabel.Name = "OutputLabel";
-            this.OutputLabel.Size = new System.Drawing.Size(167, 20);
+            this.OutputLabel.Size = new System.Drawing.Size(211, 25);
             this.OutputLabel.TabIndex = 3;
             this.OutputLabel.Text = "This text is probably in:";
             // 
@@ -71,33 +72,35 @@ namespace LanguageApp
             // 
             this.OutputText.BackColor = System.Drawing.SystemColors.Window;
             this.OutputText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.OutputText.Location = new System.Drawing.Point(300, 180);
+            this.OutputText.Location = new System.Drawing.Point(343, 240);
+            this.OutputText.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.OutputText.Name = "OutputText";
             this.OutputText.ReadOnly = true;
-            this.OutputText.Size = new System.Drawing.Size(120, 26);
+            this.OutputText.Size = new System.Drawing.Size(137, 30);
             this.OutputText.TabIndex = 4;
             this.OutputText.Text = "...";
             // 
             // Title
             // 
             this.Title.BackColor = System.Drawing.SystemColors.Control;
-            this.Title.Font = new System.Drawing.Font("Bookman Old Style", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.Title.Location = new System.Drawing.Point(25, 45);
+            this.Title.Font = new System.Drawing.Font("Bookman Old Style", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Title.Location = new System.Drawing.Point(29, 60);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(480, 50);
+            this.Title.Size = new System.Drawing.Size(549, 67);
             this.Title.TabIndex = 5;
             this.Title.Text = "I will guess your language!";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(534, 291);
+            this.ClientSize = new System.Drawing.Size(610, 388);
             this.Controls.Add(this.Title);
             this.Controls.Add(this.OutputText);
             this.Controls.Add(this.OutputLabel);
             this.Controls.Add(this.InputLabel);
             this.Controls.Add(this.InputText);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Language Guesser";
             this.Load += new System.EventHandler(this.Form1_Load);
